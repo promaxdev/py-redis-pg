@@ -23,7 +23,7 @@ if len(sys.argv) > 1 and '--dev' in sys.argv:
     FROM_EXPIRY_IN_SECS = 5
     MAX_SMS_COUNT = 2
 
-DB_URL = 'postgresql+psycopg2://{user}:{pw}@{url}/{db}'.format(user='postgres',pw='postgres',url='localhost',db='postgres')
+DB_URL = 'postgresql+psycopg2://{user}:{pw}@{host}/{db}'.format(user='----',pw='----',host='---',db='---')
 
 app.config['SQLALCHEMY_DATABASE_URI'] = DB_URL #'postgresql://localhost/postgres'
 db = SQLAlchemy(app)
