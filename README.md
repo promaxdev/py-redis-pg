@@ -3,9 +3,9 @@ Simple case study using postgre python and redis
 
 # Prerequisites
 Following need to be installed before this sample can be tried
-Postgre Server
-Python 3.x preferrably > 3.5
-Redis 4
+1) Postgre Server
+2) Python 3.x preferrably > 3.5
+3) Redis 4
 
 # Importing Test Data
 Get the SQL from the below location
@@ -51,11 +51,13 @@ DB_URL = 'postgresql+psycopg2://{user}:{pw}@{host}/{db}'.format(user='----',pw='
 
 Replace the ---- with values corresponding to your configuration.
 
-In separate command prompts execute the following
+In separate command prompts execute the following.  Note: if you are using a virtualenv, dont forget to activate it before you run the below command.
 
 $ python3 api.py --dev
 
 Note: Skipping '--dev' switch would make tests take very long time ~ 1 day and a test case to fail
+
+
 
 In another command prompt execute
 $ python3 test.py
